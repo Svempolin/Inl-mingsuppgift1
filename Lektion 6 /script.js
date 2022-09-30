@@ -1,7 +1,13 @@
-const calc = (numOne, numTwo) => {
-  return numOne + numTwo;
-};
+function guessNumber() {
+  const random = Math.floor(Math.random() * 10) + 1;
 
-let sumTotal = calc(1, 4);
+  let number = parseFloat(prompt(" Guess a number from 1 to 10"));
 
-console.log(sumTotal);
+  if (number !== random) {
+    number = parseFloat(prompt(" Guess a number from 1 to 10, ones again"));
+  } else if (Number == random) {
+    console.log(" You guess the right number");
+  }
+}
+
+guessNumber();
