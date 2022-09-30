@@ -5,12 +5,18 @@
   </head>
   <body>
     <h1>Guess a random nr</h1>
-    <form>
-      ><label for="Guess a nr ">Guess a number</label><br />
-      <imput for="nr" id="randomNumber" value=" Random Number"> </imput>
-    </form>
-
-    <p>put in a nr</p>
+    <p>
+      We have selected a random number 1 - 10 lets see if you can guess it.
+    </p>
+    <div class= "form">
+    
+      <label for="Guess a nr ">Guess a number</label><br />
+      <input type="GuessNr" id="GuessRandomNumber" class=" RandomNumber"> </input>
+      <input type="SubmitNr"  value= "Submit Guess" id="SubmitGuess" class="guessSubmit"> </input>
+    </div>
+    <div>  <p id="right"></p></div>
+    <div>  <p id="wrong"></p></div>
+    <button  onClick="window.location.reload()"> RESTART THE GAME </button>
 
     <script src="script.js"></script>
   </body>
