@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap" rel="stylesheet">
+    <!-- <style> #right{
+      color: green;
+    }</style> -->
     <title>inlämingsuppgift1</title>
+    <link rel="stylesheet" href="style.css">
+   
   </head>
-  <body>
+  <body >
+    <div class="mainClass" >
+  <div class="heading" >
     <h1>Guess a random nr</h1>
+  </div>
+  <div class="description">
     <p>
-      We have selected a random number 1 - 10 lets see if you can guess it.
+      We have selected a random number 1 - 10 <br>lets see if you can guess it.
     </p>
+  </div>
+  <div class=" childMainClass">
     <div class= "form">
-    
+      <!-- <p>MAGIC 8</p> -->
       <label for="Guess a nr ">Guess a number</label><br />
-      <input type="GuessNr" id="GuessRandomNumber" class=" RandomNumber"> </input>
+      <input type="GuessNr" id="GuessRandomNumber" class=" randomNumber"> </input>
       <input type="SubmitNr"  value= "Submit Guess" id="SubmitGuess" class="guessSubmit"> </input>
     </div>
-    <div>  <p id="right"></p></div>
+  
+  </div> 
+    <div>  <p id="right" class = "right"></p></div>
     <div>  <p id="wrong"></p></div>
-    <button  onClick="window.location.reload()"> RESTART THE GAME </button>
-
-    <script src="script.js"></script>
+    <button class="restart"  onClick="window.location.reload()"> RESTART THE GAME </button>
+  </div>
+   <div>
+    <script  src="script.js"></script>
+  </div>
   </body>
 </html>
